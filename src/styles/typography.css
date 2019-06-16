@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('OpenSans Light'), /* Windows */
+        local('OpenSans-Light'), /* Mac OS */
+        url(../fonts/opensanslight.woff2) format('woff2'),
+        url(../fonts/opensanslight.woff) format('woff'),
+        url(../fonts/opensanslight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('OpenSans Regular'), /* Windows */
+        local('OpenSans-Regular'), /* Mac OS */
+        url(../fonts/opensans.woff2) format('woff2'),
+        url(../fonts/opensans.woff) format('woff'),
+        url(../fonts/opensans.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    src: local('OpenSans Italic'), /* Windows */
+        local('OpenSans-Italic'), /* Mac OS */
+        url(../fonts/opensansitalic.woff2) format('woff2'),
+        url(../fonts/opensansitalic.woff) format('woff'),
+        url(../fonts/opensansitalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('OpenSans Semibold'), /* Windows */
+        local('OpenSans-Semibold'), /* Mac OS */
+        url(../fonts/opensanssemibold.woff2) format('woff2'),
+        url(../fonts/opensanssemibold.woff) format('woff'),
+        url(../fonts/opensanssemibold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: local('OpenSans Bold'), /* Windows */
+        local('OpenSans-Bold'), /* Mac OS */
+        url(../fonts/opensansbold.woff2) format('woff2'),
+        url(../fonts/opensansbold.woff) format('woff'),
+        url(../fonts/opensansbold.ttf) format('truetype');
+}
+
+html {
+    font-size: 6.25%; /* reset 1rem to 1px */
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 18rem; /* 18px */
+    line-height: 1.2;
+    font-weight: 300;
+    color: #555559;
+    background: #fff;
+    cursor: default;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0 0 1.5em;
+}
+
+h2 {
+    font-size: 1.714em;
+    margin: 0 0 1.5em;
+}
+
+h3 {
+    font-size: 1.286em;
+    margin: 0 0 1.5em;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #286782;
+}
+
+a:hover {
+    color: #a6a6a6;
+    transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+ul,
+ol,
+article p {
+    margin: 0 0 1em;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+ul li {
+    padding: 0;
+    margin: 0 0 0.25em 1em;
+}
+
+ol li {
+    padding: 0;
+    margin: 0 0 0.25em 1em;
+}
+
+hr {
+    color: 1px solid #84959c;
+}
+
+/* for Chrome, Opera, Android, Safari */
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+    background: none;
+}
+::-webkit-scrollbar-track {
+    background: none;
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    border: 7px solid transparent;
+    background: rgba(212, 214, 219, 0.5);
+    background-clip: padding-box;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-button
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+    display: none;
+}
+
+/* for firefox */
+
+* {
+    scrollbar-color: rgba(212, 214, 219, 0.5) transparent;
+    scrollbar-width: thin;
+}
