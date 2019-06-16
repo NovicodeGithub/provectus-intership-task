@@ -1,7 +1,7 @@
 import React from 'react'
-import { Input, Textarea, Label, Button } from './form'
+import { Input, Textarea, Label, Button } from '../components/form'
 
-class ContactForm extends React.Component {
+class ContactPage extends React.Component {
     state = {
         term: 'Default text'
     }
@@ -30,4 +30,4 @@ class ContactForm extends React.Component {
     }
 }
 
-export default ContactForm
+export default ContactPage

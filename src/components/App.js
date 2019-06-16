@@ -3,17 +3,24 @@ import SearchBar from './Searchbar'
 import youtube from '../apis/youtube'
 import VideoList from './VideoList'
 import VideoDetail from './VideoDetail'
-import ContactForm from './ContactForm'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import Navigation from './Navigation';
+
+import LandingPage from '../screens/LandingPage';
+import ContactPage from '../screens/ContactPage';
 
 import '../styles/normalize.css'
 import '../styles/typography.css'
+
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import * as ROUTES from '../constants/routes'
+
 
 class App extends React.Component {
     state = {
         videos: [],
         selectedVideo: null
     }
+
     handleSubmit = async (termFromSearchBar) => {
         const response = await youtube.get('/search', {
             params: {
@@ -24,6 +31,7 @@ class App extends React.Component {
             videos: response.data.items
         })
     }
+
     handleVideoSelect = (video) => {
         this.setState({selectedVideo: video})
     }
@@ -31,24 +39,15 @@ class App extends React.Component {
     render() {
         return (
             <div className='ui container' style={{marginTop: '1em'}}>
-                <Router>
-                    <div>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contact</Link>
-                        </li>
-                    </ul>
-                    <Switch>
-                        <Route path="/contact" component={SearchBar} />
-                    </Switch>
-                    </div>
-                </Router>
-                <SearchBar handleFormSubmit={this.handleSubmit} />
 
-                <ContactForm />
+                <Router>
+                    <Navigation />
+                    <hr />
+                    <Route exact path={ROUTES.LANDING} component={LandingPage} />
+                    <Route path={ROUTES.CONTACT} component={ContactPage} />
+                </Router>
+
+                <SearchBar handleFormSubmit={this.handleSubmit} />
 
                 <div className='ui grid'>
                     <div className="ui row">
