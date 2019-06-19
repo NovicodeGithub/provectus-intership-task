@@ -5,9 +5,9 @@
     font-stretch: normal;
     src: local('OpenSans Light'), /* Windows */
         local('OpenSans-Light'), /* Mac OS */
-        url(../fonts/opensanslight.woff2) format('woff2'),
-        url(../fonts/opensanslight.woff) format('woff'),
-        url(../fonts/opensanslight.ttf) format('truetype');
+        url(../static/fonts/opensanslight.woff2) format('woff2'),
+        url(../static/fonts/opensanslight.woff) format('woff'),
+        url(../static/fonts/opensanslight.ttf) format('truetype');
 }
 
 @font-face {
@@ -17,9 +17,9 @@
     font-stretch: normal;
     src: local('OpenSans Regular'), /* Windows */
         local('OpenSans-Regular'), /* Mac OS */
-        url(../fonts/opensans.woff2) format('woff2'),
-        url(../fonts/opensans.woff) format('woff'),
-        url(../fonts/opensans.ttf) format('truetype');
+        url(../static/fonts/opensans.woff2) format('woff2'),
+        url(../static/fonts/opensans.woff) format('woff'),
+        url(../static/fonts/opensans.ttf) format('truetype');
 }
 
 @font-face {
@@ -29,9 +29,9 @@
     font-stretch: normal;
     src: local('OpenSans Italic'), /* Windows */
         local('OpenSans-Italic'), /* Mac OS */
-        url(../fonts/opensansitalic.woff2) format('woff2'),
-        url(../fonts/opensansitalic.woff) format('woff'),
-        url(../fonts/opensansitalic.ttf) format('truetype');
+        url(../static/fonts/opensansitalic.woff2) format('woff2'),
+        url(../static/fonts/opensansitalic.woff) format('woff'),
+        url(../static/fonts/opensansitalic.ttf) format('truetype');
 }
 
 @font-face {
@@ -41,9 +41,9 @@
     font-stretch: normal;
     src: local('OpenSans Semibold'), /* Windows */
         local('OpenSans-Semibold'), /* Mac OS */
-        url(../fonts/opensanssemibold.woff2) format('woff2'),
-        url(../fonts/opensanssemibold.woff) format('woff'),
-        url(../fonts/opensanssemibold.ttf) format('truetype');
+        url(../static/fonts/opensanssemibold.woff2) format('woff2'),
+        url(../static/fonts/opensanssemibold.woff) format('woff'),
+        url(../static/fonts/opensanssemibold.ttf) format('truetype');
 }
 
 @font-face {
@@ -53,9 +53,9 @@
     font-stretch: normal;
     src: local('OpenSans Bold'), /* Windows */
         local('OpenSans-Bold'), /* Mac OS */
-        url(../fonts/opensansbold.woff2) format('woff2'),
-        url(../fonts/opensansbold.woff) format('woff'),
-        url(../fonts/opensansbold.ttf) format('truetype');
+        url(../static/fonts/opensansbold.woff2) format('woff2'),
+        url(../static/fonts/opensansbold.woff) format('woff'),
+        url(../static/fonts/opensansbold.ttf) format('truetype');
 }
 
 html {
@@ -73,7 +73,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.111em;
     margin: 0 0 1.5em;
 }
 

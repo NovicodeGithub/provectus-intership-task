@@ -1,0 +1,15 @@
+.about-us {
+    padding: 120px 0 180px;
+    text-align: center;
+}
+
+.about-us img {
+    display: inline-block;
+    margin-bottom: 36px;
+}
+
+.about-us h1 {
+    max-width: 900px;
+    display: block;
+    margin: 0 auto 80px;
+}

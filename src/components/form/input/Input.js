@@ -19,7 +19,7 @@ class Input extends React.Component {
             <input
                 className={this.props.className}
                 name={this.props.name}
-                value={this.props.value}
+                value={this.props.value === undefined ? '' : this.props.value}
                 type={this.props.type}
                 required={this.props.required}
                 placeholder={this.props.placeholder}
@@ -28,5 +28,4 @@ class Input extends React.Component {
         )
     }
 }
-
 export default Input
