@@ -1,4 +1,5 @@
-export const ABOUT_US = '/';
+
+export const MENU = '/';
+export const ABOUT_US = '/about-us';
 export const CONTACT = '/contact';
-export const MENU = '/menu';
 export const CATERING = '/catering';
