@@ -1,0 +1,147 @@
+.hotdogs-list .hotdog-item {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.hotdogs-list .header-wrapper {
+    float: left;
+    width: 50%;
+    padding-top: 14%;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.hotdog-item h2 {
+    display: block;
+    font-size: 1.333em;
+    font-weight: 700;
+    color: #555559;
+    letter-spacing: -1px;
+    position: relative;
+    max-width: 300px;
+}
+
+.hotdog-item h2::before {
+    --line-width: 1.333em;
+    width: var(--line-width);
+    top: 0.5em;
+    height: 2px;
+    content: '';
+    position: absolute;
+    left: calc((20px + var(--line-width)) * -1);
+    background-color: #286782;
+}
+
+.hotdog-item .hotdog-description {
+    display: block;
+    font-size: 1em;
+    line-height: 1.333em;
+    font-weight: 300;
+    max-width: 360px;
+}
+
+.hotdogs-list .image-wrapper {
+    display: block;
+    float: right;
+    height: 0;
+    width: 50%;
+    padding-top: 40%; /* 2:5 Aspect Ratio */
+    position: relative;
+}
+
+.hotdogs-list .article-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.hotdog-item:nth-child(2n) .image-wrapper {
+    float: left;
+}
+
+.hotdog-item:nth-child(2n) .header-wrapper {
+    float: right;
+}
+
+@media (max-device-width: 992px) {
+    .hotdogs-list {
+        padding: 0 32px 80px;
+        box-sizing: border-box;
+    }
+
+    .hotdogs-list .hotdog-item {
+        padding: 100px 36px 0;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        overflow: auto;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 20px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+    }
+
+    .hotdogs-list .image-wrapper {
+        float: none;
+        width: 100%;
+        padding-top: 80%; /* 4:5 Aspect Ratio */
+        margin: 0 auto;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .hotdogs-list .header-wrapper {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .hotdog-item:nth-child(2n) .image-wrapper {
+        float: none;
+    }
+
+    .hotdog-item:nth-child(2n) .header-wrapper {
+        float: none;
+    }
+
+    .hotdog-item h2 {
+        font-size: 1.778em;
+        max-width: 100%;
+    }
+
+    .hotdog-item h2::before {
+        position: absolute;
+        left: 0;
+        top: -40px;
+    }
+
+    .hotdog-item .hotdog-description {
+        max-width: 100%;
+        margin-bottom: 32px;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-device-width: 600px) {
+    .hotdogs-list {
+        padding: 0 20px 80px;
+    }
+
+    .hotdogs-list .hotdog-item {
+        padding: 100px 0 0;
+    }
+
+    .hotdog-item .header-wrapper {
+        padding: 0 24px;
+    }
+
+    .hotdogs-list .image-wrapper {
+        border-radius: 0;
+    }
+}

@@ -1,4 +1,4 @@
-button {
+.primary-button {
     font-size: 20px;
     height: 3.2em; /* 64px */
     line-height: 1.2em; /* 24px */
@@ -15,7 +15,13 @@ button {
     margin: 0;
 }
 
-button::-moz-focus-inner {
+.primary-button::-moz-focus-inner {
     border: 0;
     padding: 0;
+}
+
+@media (max-device-width: 600px) {
+    .primary-button {
+        width: 100%;
+    }
 }

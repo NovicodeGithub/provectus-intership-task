@@ -15,6 +15,7 @@ textarea {
     resize: vertical;
     min-height: 5em; /* rows * line-height + padding-top + paddint-bottom + borders */
     overflow: auto;
+    background-clip: padding-box;
 }
 
 textarea:focus {

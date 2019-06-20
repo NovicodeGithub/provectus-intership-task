@@ -67,6 +67,8 @@
     .mainmenu .menu-item {
         padding: 0 20px;
         line-height: 3em;
+        text-transform: none;
+        font-size: 1em;
     }
 }
 

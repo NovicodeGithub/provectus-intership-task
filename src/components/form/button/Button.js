@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './button.css'
 
 class Button extends React.Component {
@@ -7,13 +8,14 @@ class Button extends React.Component {
         this.state = {
             className: '',
             buttonText: 'Default text',
-            type: ''
+            type: '',
+            disabled: false
         }
     }
 
     render() {
         return (
-            <button className={this.props.className} type={this.props.type}>
+            <button className={this.props.className} type={this.props.type} disabled={this.props.disabled}>
                 {this.props.buttonText}
             </button>
         )

@@ -1,30 +1,19 @@
 import React from 'react'
 import './textarea.css'
 
-class Textarea extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: '',
-            value: '',
-            required: false,
-            className: '',
-            placeholder: ''
-        }
+const Textarea = props => {
+
+    let formControl = "form-control";
+
+    if (props.touched && !props.valid) {
+        formControl = 'form-control control-error';
     }
 
-    render() {
-        return (
-            <textarea
-                className={this.props.className}
-                name={this.props.name}
-                value={this.props.value}
-                required={this.props.required}
-                placeholder={this.props.placeholder}
-            >
-            </textarea>
-        )
-    }
+    return (
+        <div className="form-group">
+            <textarea {...props} className={formControl} />
+        </div>
+    );
 }
 
-export default Textarea
+export default Textarea;

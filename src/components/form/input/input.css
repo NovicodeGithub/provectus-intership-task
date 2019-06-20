@@ -2,16 +2,17 @@ input {
     display: inline-block;
     width: auto;
     height: auto;
-    line-height: 1.125em;
+    line-height: 1.3em;
     font-size: 16px;
     font-family: inherit;
     border-radius: 5px;
     color: #000;
-    padding: calc(1.5em / 2) 13px;
+    padding: calc(1.125em / 2) 13px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     box-shadow: none;
     background: inherit;
+    background-clip: padding-box;
 }
 
 input::-moz-focus-inner {

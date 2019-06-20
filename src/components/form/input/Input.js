@@ -1,31 +1,23 @@
 import React from 'react'
+
 import './input.css'
 
-class Input extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: '',
-            value: '',
-            type: 'text',
-            required: false,
-            className: '',
-            placeholder: ''
-        }
+const Input = props => {
+
+    let formControl = "form-control"
+    let validationError = null
+
+    if (props.touched && !props.valid) {
+        formControl = 'form-control control-error'
+        validationError = <p>Please enter a valid value!</p>
     }
 
-    render() {
-        return (
-            <input
-                className={this.props.className}
-                name={this.props.name}
-                value={this.props.value === undefined ? '' : this.props.value}
-                type={this.props.type}
-                required={this.props.required}
-                placeholder={this.props.placeholder}
-            >
-            </input>
-        )
-    }
+    return (
+        <div className="form-group">
+            <input className={formControl} {...props} />
+            {validationError}
+        </div>
+    )
 }
-export default Input
+
+export default Input;

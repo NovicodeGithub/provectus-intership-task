@@ -38,9 +38,37 @@
 }
 
 @media (max-device-width: 920px) {
+    .page-footer {
+        height: 140px;
+    }
 
+    .page-footer .content-wrapper {
+        height: 100%;
+    }
+
+    .footer-info > .footer-item {
+        display: block;
+        line-height: 1.8em;
+    }
+
+    .footer-info > .footer-item + .footer-item::before {
+        content: none;
+    }
 }
 
 @media (max-device-width: 600px) {
-    
+    .page-footer {
+        height: 180px;
+    }
+
+    .footer-info {
+        display: block;
+        float: left;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .footer-info > .footer-item + .footer-item::before {
+        border-top: 1px solid #000;
+    }
 }

@@ -8,10 +8,22 @@ body {
     background-color: #fbfafa;
 }
 
+@media (max-device-width: 920px) {
+    body {
+        margin-bottom: 140px;
+    }
+}
+
 footer {
     position: absolute;
     left: 0;
     bottom: 0;
     height: 100px;
     width: 100%;
+}
+
+@media (max-device-width: 600px) {
+    body {
+        margin-bottom: 180px;
+    }
 }
