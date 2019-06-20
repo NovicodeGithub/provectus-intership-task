@@ -60,12 +60,12 @@ class HotDogArticlesList extends React.Component {
                 </div>
             )
         } else {
-            return <div>No articles found</div>
+            return <div className="articles-failure-warning">No articles found</div>
         }
     }
 
     renderLoading () {
-        return <div>Loading...</div>
+        return <div className="articles-preloader">Loading...</div>
     }
 }
 

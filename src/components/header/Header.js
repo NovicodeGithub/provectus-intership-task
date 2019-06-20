@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import * as ROUTES from '../../constants/routes'
 
 import './header.css'
-
 class Header extends React.Component {
     changeMenuState() {
         let mainNav = document.getElementById("menu-responsive");

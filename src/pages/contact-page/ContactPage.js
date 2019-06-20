@@ -1,10 +1,10 @@
 import React from 'react'
 import API from '../../apis/herokuapp'
+import validate from '../../components/form/validate'
 
 import { Label, Textarea, Input, Button } from '../../components/form'
 
 import './contact-page.css'
-import validate from '../../components/form/validate'
 
 class ContactPage extends React.Component {
     constructor() {
@@ -50,17 +50,18 @@ class ContactPage extends React.Component {
             }
         }
     }
+
     changeHandler = event => {
 
         const name = event.target.name
         const value = event.target.value
-
         const updatedControls = {
             ...this.state.formControls
         }
         const updatedFormElement = {
             ...updatedControls[name]
         }
+
         updatedFormElement.value = value
         updatedFormElement.touched = true
         updatedFormElement.valid = validate(value, updatedFormElement.validationRules)
@@ -81,7 +82,7 @@ class ContactPage extends React.Component {
 
 
     formSubmitHandler = event => {
-        event.preventDefault();
+        event.preventDefault()
         const formData = {}
 
         for (let formElementId in this.state.formControls) {
@@ -143,7 +144,6 @@ class ContactPage extends React.Component {
                         />
                     </Label>
 
-                    {/* Reacts to change of font-size */}
                     <Button className="submit-button"
                         type="submit"
                         buttonText="Send your question"

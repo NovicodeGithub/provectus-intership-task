@@ -70,6 +70,14 @@
     float: right;
 }
 
+.articles-failure-warning, .articles-preloader {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-bottom: 40px;
+    display: block;
+    text-align: center;
+}
+
 @media (max-device-width: 992px) {
     .hotdogs-list {
         padding: 0 32px 80px;

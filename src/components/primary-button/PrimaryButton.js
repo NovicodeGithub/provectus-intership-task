@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './primary-button.css'
-
 class PrimaryButton extends React.Component {
     constructor(props) {
         super(props);

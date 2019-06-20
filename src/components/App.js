@@ -5,13 +5,13 @@ import '../styles/typography.css'
 import './app.css'
 
 import Header from './header/Header';
+import ImagesGrid from './images-grid/ImagesGrid';
 import Footer from './footer/Footer';
-import CateringPage from '../pages/CateringPage';
 
 import AboutUsPage from '../pages/about-us-page/AboutUsPage';
 import ContactPage from '../pages/contact-page/ContactPage';
 import MenuPage from '../pages/MenuPage';
-import ImagesGrid from './images-grid/ImagesGrid';
+import CateringPage from '../pages/CateringPage';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import * as ROUTES from '../constants/routes'
