@@ -40,7 +40,7 @@ class HotDogArticlesList extends React.Component {
     }
 
     renderData (filteredArticlesByDate) {
-        if (filteredArticlesByDate && filteredArticlesByDate.length) {
+        if (filteredArticlesByDate.length) {
             return (
                 <div className="hotdogs-list">
                     {this.state.filteredArticlesByDate.map((article, index) =>
