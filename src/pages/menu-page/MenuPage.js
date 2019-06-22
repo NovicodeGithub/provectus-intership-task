@@ -12,8 +12,9 @@ class AboutUsPage extends React.Component {
             <div className="content-wrapper">
                 <article className="menu-item">
                     <img src={logo} alt="Dirty Dogs logo" width="92" height="92" />
+                    
                     <h1>Dirty Dogs serves all-beef, vegan and vegatagian hot dogs.</h1>
-                    <PrimaryButton type="button" buttonText='More Dogs‘n Make Em Hot' className="primary-button" />
+                    <PrimaryButton>More Dogs‘n Make Em Hot</PrimaryButton>
                 </article>
 
                 <HotDogArticlesList />

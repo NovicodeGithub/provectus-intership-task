@@ -77,7 +77,6 @@ class ContactPage extends React.Component {
             formControls: updatedControls,
             formIsValid: formIsValid
         })
-
     }
 
 

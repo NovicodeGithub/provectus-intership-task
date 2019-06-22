@@ -19,7 +19,7 @@ class HotDogArticlesList extends React.Component {
     }
 
     filterByDate (articles, filteredArticlesByDate) {
-        let startDate = new Date("2018-08-04").getTime()
+        let startDate = new Date("2018-04-01").getTime()
 
         filteredArticlesByDate = articles.filter(function (article) {
             let hitDates = article.expirationDate || {}
